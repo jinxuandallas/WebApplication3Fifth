@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="plusdiv">
+    0
+</div>
+<input type="button" id="plus" value="+" onclick="clickplus()" />
+<script>
+    function clickplus() {
+        var a = parseInt($("#plusdiv").text());
+
+        $("#plusdiv").text(++a);
+    }
+</script>
+
